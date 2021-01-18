@@ -58,14 +58,14 @@ class Comware < Oxidized::Model
     comment cfg
   end
 
-  cmd 'display device' do |cfg|
-    comment cfg
-  end
+  #cmd 'display device' do |cfg|
+  #  comment cfg
+  #end
 
-  cmd 'display device manuinfo' do |cfg|
-    cfg = cfg.each_line.reject { |l| l.match 'FF'.hex.chr }.join
-    comment cfg
-  end
+  #cmd 'display device manuinfo' do |cfg|
+  #  cfg = cfg.each_line.reject { |l| l.match 'FF'.hex.chr }.join
+  #  comment cfg
+  #end
 
   cmd 'display current-configuration' do |cfg|
     cfg
